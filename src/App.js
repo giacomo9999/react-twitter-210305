@@ -36,6 +36,31 @@ function App() {
     fetchData();
   }, []);
 
+  console.log("T: ", T);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await fetch(`https://swapi.dev/api/people/1/`);
+  //     const newData = await response.json();
+  //     setTwData(newData);
+  //   };
+  //   fetchData();
+  // },[]);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await fetch(
+  //       "https://api.twitter.com/2/users/63046977/mentions",
+  //       { headers: { Authorization: process.env.REACT_APP_API_KEY } }
+  //     );
+  //     const newData = await response.json();
+  //     setTwData(newData);
+  //   };
+  //   fetchData();
+  // }, []);
+
+  console.log(twData);
+
   return (
     <div className="container-outer">
       <h2>APP</h2>
